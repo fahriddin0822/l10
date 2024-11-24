@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Product.css"
 
 const Products = () => {
   const products = [
@@ -7,21 +8,21 @@ const Products = () => {
       name: "Special Coffee Gold",
       rating: 5,
       price: "$29.99",
-      image: "/src/assets/background_photo_coffee.jpeg"
+      image: "/src/assets/product__img.svg"
     },
     {
       id: 2,
       name: "Special Coffee Silver",
       rating: 5,
       price: "$24.99",
-      image: "/src/assets/background_photo_coffee.jpeg"
+      image: "/src/assets/product__img.svg"
     },
     {
       id: 3,
       name: "Special Coffee Bronze",
       rating: 5,
       price: "$19.99",
-      image: "/src/assets/background_photo_coffee.jpeg"
+      image: "/src/assets/product__img.svg"
     }
   ];
 
@@ -80,7 +81,7 @@ const Products = () => {
           </div>
           <div className="flex justify-center">
             <img
-              src="/src/assets/background_photo_coffee.jpeg"
+              src="/src/assets/product__img.svg"
               alt="Coffee Machine"
               className="w-full max-w-md rounded-lg"
             />

@@ -1,7 +1,6 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* CSS Reset */
 *,
 *::before,
 *::after {
@@ -10,20 +9,17 @@
   box-sizing: border-box;
 }
 
-/* Root Variables */
 :root {
   --primary-color: #C8A27A;
   --secondary-color: #B88E5F;
   --dark-bg: #191919;
   --light-text: #FFFFFF;
 
-  /* Additional variables */
   --header-height: 72px;
   --transition-speed: 0.3s;
   --border-radius: 8px;
 }
 
-/* Base Styles */
 html {
   scroll-behavior: smooth;
 }
@@ -36,13 +32,11 @@ body {
   overflow-x: hidden;
 }
 
-/* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.2;
 }
 
-/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -54,7 +48,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Utility Classes */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -74,7 +67,6 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   .container {
     max-width: 960px;
