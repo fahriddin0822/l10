@@ -1,24 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Header } from './components/header/Header'
-import HeroSection from './components/hero/Hero'
+import React from 'react';
+import Header from './components/header/Header.jsx';
+import Hero from './components/hero/Hero.jsx';
+// import Footer from './components/footer/Footer.jsx';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-        <Header/>
-        <HeroSection 
-          title="Enjoy Your Morning Coffee"
-          description="Start your day refreshingly with premium coffee beans. The perfect blend for a perfect morning."
-          buttonText="Order Now"
-          backgroundImage="/path/to/your/coffee-image.jpg"
-        />
-    </>
-  )
+    <div className="app">
+      <Header />
+      <main className="main-content">
+        <Hero />
+        {/* Add other sections here */}
+      </main>
+      {/* <Footer /> */}
+    </div>
+  );
 }
 
-export default App
+export default App;
