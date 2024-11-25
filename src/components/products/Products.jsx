@@ -1,6 +1,8 @@
 import "./Product.css"
 import blender from "../../assets/blender.png"
-import product__img from '../../assets/product__img.svg'
+import product__img from '../../assets/Rectangle 4.png'
+import product__img1 from '../../assets/Rectangle 4 (1).png'
+import product__img2 from '../../assets/Rectangle 4 (2).png'
 
 const Products = () => {
 
@@ -34,14 +36,14 @@ const Products = () => {
       name: "Special Coffee Silver",
       rating: StarRating(5),
       price: "$24.99",
-      image: product__img
+      image: product__img1
     },
     {
       id: 3,
       name: "Special Coffee Bronze",
       rating: StarRating(5),
       price: "$19.99",
-      image: product__img
+      image: product__img2
     }
   ];
 
