@@ -1,4 +1,6 @@
 import "./Product.css"
+import blender from "../../assets/blender.png"
+import product__img from '../../assets/product__img.svg'
 
 const Products = () => {
 
@@ -25,21 +27,21 @@ const Products = () => {
       name: "Special Coffee Gold",
       rating: StarRating(5),
       price: "$29.99",
-      image: "./src/assets/product__img.svg"
+      image: product__img
     },
     {
       id: 2,
       name: "Special Coffee Silver",
       rating: StarRating(5),
       price: "$24.99",
-      image: "./src/assets/product__img.svg"
+      image: product__img
     },
     {
       id: 3,
       name: "Special Coffee Bronze",
       rating: StarRating(5),
       price: "$19.99",
-      image: "./src/assets/product__img.svg"
+      image: product__img
     }
   ];
 
@@ -98,7 +100,7 @@ const Products = () => {
       <div className="grid__machine">
         <div className="flex justify-center">
           <img
-            src="./src/assets/blender.png"
+            src={blender}
             alt="Coffee Machine"
             className="w-full max-w-md rounded-lg"
           />
