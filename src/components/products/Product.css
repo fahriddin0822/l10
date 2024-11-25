@@ -10,6 +10,10 @@
     margin: 0 auto;
   }
 
+  .product {
+    height: 200px;
+  }
+
   .products__type {
     display: flex;
     flex-direction: column;

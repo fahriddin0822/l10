@@ -25,21 +25,21 @@ const Products = () => {
       name: "Special Coffee Gold",
       rating: StarRating(5),
       price: "$29.99",
-      image: "/src/assets/product__img.svg"
+      image: "./src/assets/product__img.svg"
     },
     {
       id: 2,
       name: "Special Coffee Silver",
       rating: StarRating(5),
       price: "$24.99",
-      image: "/src/assets/product__img.svg"
+      image: "./src/assets/product__img.svg"
     },
     {
       id: 3,
       name: "Special Coffee Bronze",
       rating: StarRating(5),
       price: "$19.99",
-      image: "/src/assets/product__img.svg"
+      image: "./src/assets/product__img.svg"
     }
   ];
 
@@ -51,7 +51,7 @@ const Products = () => {
 
           <div key={product.id} className="bg-black/30 rounded-lg p-6 flex flex-col items-center">
             <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
-            <img  
+            <img
               src={product.image}
               alt={product.name}
               className="w-48 h-64 object-cover rounded-lg mb-4"
