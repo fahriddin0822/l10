@@ -1,10 +1,8 @@
-import React from 'react';
-
 const Booking = () => {
   return (
     <section className="py-20 px-4 bg-black/30">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold mb-12 text-center">Booking a table</h2>
+        <h2 className="category__text font-bold mb-12 text-center">Booking a table</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="rounded-lg overflow-hidden">
             <img

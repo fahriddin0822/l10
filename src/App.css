@@ -5,7 +5,9 @@
 }
 
 .main-content {
-  padding-top: 120px;
+  /* padding-top: 60px; */
+  width: 1200px;
+  margin: 0 auto;
   flex: 1;
 }
 

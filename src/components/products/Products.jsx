@@ -1,30 +1,6 @@
-import React from 'react';
 import "./Product.css"
 
 const Products = () => {
-  const products = [
-    {
-      id: 1,
-      name: "Special Coffee Gold",
-      rating: 5,
-      price: "$29.99",
-      image: "/src/assets/product__img.svg"
-    },
-    {
-      id: 2,
-      name: "Special Coffee Silver",
-      rating: 5,
-      price: "$24.99",
-      image: "/src/assets/product__img.svg"
-    },
-    {
-      id: 3,
-      name: "Special Coffee Bronze",
-      rating: 5,
-      price: "$19.99",
-      image: "/src/assets/product__img.svg"
-    }
-  ];
 
   const StarRating = ({ rating }) => {
     return (
@@ -43,49 +19,100 @@ const Products = () => {
     );
   };
 
-  return (
-    <section className="bg-dark-bg text-light-text py-20">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-12 text-center">Coffee Popular Product</h2>
-        
-        {/* Products Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-          {products.map((product) => (
-            <div key={product.id} className="bg-black/30 rounded-lg p-6 flex flex-col items-center">
-              <img
-                src={product.image}
-                alt={product.name}
-                className="w-48 h-64 object-cover rounded-lg mb-4"
-              />
-              <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
-              <StarRating rating={product.rating} />
-              <p className="text-lg font-bold mt-2">{product.price}</p>
-              <button className="mt-4 bg-[#C8A27A] hover:bg-[#B88E5F] text-white px-6 py-2 rounded-full transition-all duration-300">
-                Order Now
-              </button>
-            </div>
-          ))}
-        </div>
+  const products = [
+    {
+      id: 1,
+      name: "Special Coffee Gold",
+      rating: StarRating(5),
+      price: "$29.99",
+      image: "/src/assets/product__img.svg"
+    },
+    {
+      id: 2,
+      name: "Special Coffee Silver",
+      rating: StarRating(5),
+      price: "$24.99",
+      image: "/src/assets/product__img.svg"
+    },
+    {
+      id: 3,
+      name: "Special Coffee Bronze",
+      rating: StarRating(5),
+      price: "$19.99",
+      image: "/src/assets/product__img.svg"
+    }
+  ];
 
-        {/* Machine Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="text-3xl font-bold mb-4">Coffee machine buy for home</h2>
-            <p className="text-gray-300 mb-6">
-              Experience cafe-quality coffee in the comfort of your home with our premium coffee machines. 
-              Perfect for coffee enthusiasts who appreciate the art of brewing.
-            </p>
-            <button className="bg-[#C8A27A] hover:bg-[#B88E5F] text-white px-8 py-3 rounded-full transition-all duration-300">
+  return (
+    <section className="products__popular text-light-text py-20">
+      <div className="products__type">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+        {products.map((product) => (
+
+          <div key={product.id} className="bg-black/30 rounded-lg p-6 flex flex-col items-center">
+            <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
+            <img  
+              src={product.image}
+              alt={product.name}
+              className="w-48 h-64 object-cover rounded-lg mb-4"
+            />
+          </div>
+        ))}
+      </div>
+      <button className="btn__card">
+        VIEW ALL PRODUCTS
+      </button>
+      </div>
+      
+      
+      
+      <div className="products">
+      <div className="category__text__gold">
+        <p>Popular Product</p>
+      </div>
+      <h2 className="category__text font-bold mb-12 text-center">Coffee Popular Product</h2>
+      {/* Products Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+        {products.map((product) => (
+          <div key={product.id} className="bg-black/30 rounded-lg p-6 flex flex-col items-center">
+            <img  
+              src={product.image}
+              alt={product.name}
+              className="w-48 h-64 object-cover rounded-lg mb-4"
+            />
+            <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
+            <StarRating rating={product.rating} />
+            <p className="text-lg font-bold mt-2">{product.price}</p>
+            <button className="btn__card">
               Buy Now
             </button>
           </div>
-          <div className="flex justify-center">
-            <img
-              src="/src/assets/product__img.svg"
-              alt="Coffee Machine"
-              className="w-full max-w-md rounded-lg"
-            />
-          </div>
+        ))}
+      </div>
+      <button className="btn__card">
+        VIEW ALL PRODUCTS
+      </button>
+      </div>
+
+      {/* Machine Section */}
+      <div className="grid__machine">
+        <div className="flex justify-center">
+          <img
+            src="/src/assets/blender.png"
+            alt="Coffee Machine"
+            className="w-full max-w-md rounded-lg"
+          />
+        </div>
+
+        <div>
+          <h2 className="text-3xl font-bold mb-4">Coffee machine buy for home</h2>
+          <p className="text-gray-300 mb-6">
+            Experience cafe-quality coffee in the comfort of your home with our premium coffee machines. 
+            Perfect for coffee enthusiasts who appreciate the art of brewing.
+          </p>
+          <button className="btn__card hover:bg-[#B88E5F] text-white px-8 py-3 rounded-full transition-all duration-300">
+            Discover Now
+          </button>
         </div>
       </div>
     </section>

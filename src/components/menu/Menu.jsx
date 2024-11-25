@@ -31,7 +31,7 @@ const Menu = () => {
   return (
     <section className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold mb-12 text-center">Coffee popular menu</h2>
+        <h2 className="category__text font-bold mb-12 text-center">Coffee popular menu</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {menuItems.map((item) => (
             <div key={item.id} className="flex items-center justify-between p-4 bg-black/30 rounded-lg">

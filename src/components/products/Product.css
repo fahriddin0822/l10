@@ -1,13 +1,53 @@
-/* Products.css */
+.products__popular {
+    background-color: #14110E;
+    padding: 10px;
+  }
 
-.bg-dark-bg {
-    background-color: #1A1815;
+  .products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .products__type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .products.btn__card{
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .category__text__gold{
+    margin-top: 20px;
+    color: gold;
+    font-size: small;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-self: center;
   }
   
   .text-light-text {
     color: #FFFFFF;
   }
   
+  .btn__card{
+    margin-top: 10px;
+    padding: 0 10px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #B88E5F;
+  }
+
+  .btn__card:hover{
+    background-color: #f3c188;
+  }
+
   /* Product Grid Layout */
   .grid {
     display: grid;
@@ -15,10 +55,21 @@
     gap: 2.5rem;
     padding: 2rem;
   }
+
+  .grid__machine {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+    padding: 2rem;
+    background-color: #1C1814;
+    border-radius: 2px;
+    margin: 40px;
+  }
   
   /* Individual Product Card Styling */
   .bg-black\/30 {
-    background: rgba(0, 0, 0, 0.3);
+    background: #121315;
     border-radius: 1rem;
     padding: 2rem;
     margin: 1rem;
@@ -88,7 +139,9 @@
   /* Machine Section Styling */
   .grid.grid-cols-1.md\:grid-cols-2 {
     margin-top: 4rem;
+    width: 100%;
     gap: 3rem;
+    margin: 0 auto;
   }
   
   /* Responsive Design */
@@ -114,6 +167,8 @@
   }
   
   /* Header Styling */
-  .text-4xl {
+  .category__text {
     margin-bottom: 3rem;
+    padding-top: 1rem;
   }
+

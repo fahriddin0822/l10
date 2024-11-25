@@ -2,22 +2,15 @@
   height: 100vh;
   width: 100%;
   position: relative;
-  background-image: url('../../assets/background_photo_coffee.jpeg');
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
-  padding-top: 72px; /* Height of header */
 }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+.hero #background__photo__coffee {
+  display: flex;
+  z-index: -100;
 }
 
 .hero-content {

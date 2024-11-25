@@ -25,7 +25,7 @@ const News = () => {
   return (
     <section className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold mb-12 text-center">Our latest news</h2>
+        <h2 className="category__text font-bold mb-12 text-center">Our latest news</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {newsItems.map((item) => (
             <div key={item.id} className="bg-black/30 rounded-lg overflow-hidden">
