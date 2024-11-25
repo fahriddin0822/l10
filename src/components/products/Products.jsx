@@ -98,7 +98,7 @@ const Products = () => {
       <div className="grid__machine">
         <div className="flex justify-center">
           <img
-            src="/src/assets/blender.png"
+            src="./src/assets/blender.png"
             alt="Coffee Machine"
             className="w-full max-w-md rounded-lg"
           />
